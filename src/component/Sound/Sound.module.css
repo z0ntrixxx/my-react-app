@@ -1,0 +1,68 @@
+.sound {
+    font-family: 'Inter', sans-serif;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.sounds__subtitle {
+    font-size: 14px;
+    font-weight: 500;
+    color: #555;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.sounds__title {
+    font-size: 48px;
+    font-weight: 700;
+    color: #000;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.sounds__title-span {
+    color: #0033FF; 
+}
+
+.sounds__description {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+    max-width: 700px;
+    margin: 0 auto 30px;
+}
+
+.sounds__button {
+    background-color: #0033FF;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 12px 30px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-bottom: 40px;
+    transition: background-color 0.3s;
+}
+
+.sounds__button:hover {
+    background-color: #0022CC;
+}
+
+.sounds__image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    position: relative;
+    z-index: 1;
+}
+
+.vector__image {
+    position: absolute;
+   
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: 0; 
+}
