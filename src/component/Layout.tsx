@@ -1,18 +1,15 @@
-import React from 'react'
-
 import { Header } from "./Header/Header"
 import { Footer } from "./Footer/Footer"
+import { Outlet } from 'react-router-dom';
 
-type LayoutProps = {
-    children: React.ReactMode;
-};
 
-export const Layout = ({ children }: LayoutProps) => {
+
+export const Layout = () => {
     return( 
         <div className="container">
         <Header/>
-<main> { children }</main>
-<Footer/>
+        <main><Outlet/></main>
+        <Footer/>
         </div>
     )
 }
