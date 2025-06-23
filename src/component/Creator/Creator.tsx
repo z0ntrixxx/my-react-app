@@ -1,5 +1,5 @@
 import React from 'react';
-import {CardList} from '../CardList/CardList';
+import { CardList } from '../CardList/CardList';
 
 export const Creator = (): React.ReactElement => {
     return (
