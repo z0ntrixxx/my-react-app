@@ -66,3 +66,21 @@
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     margin: 0 auto;
 }
+
+@media (max-width: 1366px) {}
+
+@media (max-width: 1000px) {
+    .studio__image{
+        width: 480px;
+        height: 430px;
+    }
+    .studio__title{
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 800px) {
+    .studio__content{
+        margin-left: 5px;
+    }
+}
