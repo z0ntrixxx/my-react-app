@@ -1,7 +1,11 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
-export const Header = (): React.ReactElement => {
+interface HeaderProps {
+    openForm: () => void;
+}
+
+export const Header = ({openForm}: HeaderProps): React.ReactElement => {
     return (
         <header className="container header">
         <div className="header__container">
@@ -20,7 +24,7 @@ export const Header = (): React.ReactElement => {
             </nav>
             <div className="header__buttons">
                 <button className="btn-login">Войти</button>
-                <button className="btn-signup">Зарегистрироваться</button>
+                <button className="btn-signup" onClick={openForm}>Зарегистрироваться</button>
             </div>
         </div>
     </header>

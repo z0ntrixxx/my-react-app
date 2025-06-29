@@ -3,6 +3,7 @@
     font-family: 'Inter', sans-serif;
     background-color: #f8f8f8;
     padding: 60px 0 30px;
+    justify-content: center;
 }
 
 .logotype{
@@ -119,4 +120,20 @@
 
 .footer__links a:hover {
     color: #0033FF;
+}
+
+@media (max-width: 1020px){
+    .footer{
+        flex-direction: column ;
+    }
+    .footer__nav{
+        margin: auto;
+        text-align: center;
+    }
+    .footer__nav__list{
+        text-align: center;
+    }
+    .footer__logo{
+        margin-right: 0px;
+    }
 }
