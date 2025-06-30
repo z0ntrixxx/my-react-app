@@ -8,20 +8,8 @@
 
 .creator__content {
     display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    margin: 0 auto;
-    gap: 60px;
-    flex-wrap: wrap;
-    z-index: -1;
 }
 
-.creator__left {
-    flex: 1;
-    min-width: 300px;
-    max-width: 500px;
-    padding-left: 40px; 
-}
 
 .creator__title {
     color: white;
@@ -62,7 +50,6 @@
 }
 
 .creator__right {
-    flex: 1;
     min-width: 300px;
     display: flex;
     flex-direction: column;
