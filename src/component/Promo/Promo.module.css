@@ -39,3 +39,23 @@
     cursor: pointer;
 }
 
+@media (max-width: 1366px) {
+    .promo__people{
+        width: 688px;
+        height: 602px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .promo__people{
+        width: 472px;
+        height: 386px;
+    }
+}
+
+@media (max-width: 800px) {
+    .promo__people{
+        width: 470px;
+        height: 384px;
+    }
+}

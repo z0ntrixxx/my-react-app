@@ -8,7 +8,7 @@ export const Studio = (): React.ReactElement =>{
 
         <div className="studio__content">
             <h4 className="studio__subtitle">Студия</h4>
-            <h2 className="studio__title">Оставайтесь в <br/><span className="studio__span">гармонии</span></h2>
+            <h2 className="studio__title">Оставайтесь в <span className="studio__span">гармонии</span></h2>
             <p className="studio__description">Попробуйте ведущее в отрасли <br/> музыкальное программное обеспечение<br/>
                 бесплатно, со временем окупите его и
                 будете его владельцем навсегда.</p>
