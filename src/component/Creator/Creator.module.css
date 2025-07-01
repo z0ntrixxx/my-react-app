@@ -13,7 +13,7 @@
 
 .creator__title {
     color: white;
-    font-size: 48px;
+    font-size: 40px;
     font-weight: 700;
     line-height: 1.2;
     margin-bottom: 20px;
@@ -56,8 +56,12 @@
     align-items: flex-start;
 }
 
+.creator__left{
+    margin-left: 10px;
+}
+
 @media (max-width: 1366px) {
     .creator__title{
-        font-size: 38px;
+        font-size: 32px;
     }
 }

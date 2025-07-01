@@ -1,44 +1,58 @@
-import { useLocation } from "react-router"
-import { useEffect, useState } from 'react'
-import { Header } from "../../Header/Header"
-import { Card } from "../../Card/Card"
+import { useLocation } from 'react-router';
+import { useEffect, useState } from 'react';
+import { Card } from '../../Card/Card';
 
-interface CardProps {
-    "id": number;
-    "title": string;
-    "body": string;
+interface Artist {
+  id: number;
+  name: string;
+  instrument: string;
+  description: string;
+  avatar: string;
 }
 
-const CARDLIMIT = 10;
+const CARDLIMIT = 4;
 
 export function CardsPage() {
-    const { search } = useLocation();
-    const searchParams = new URLSearchParams(search);
-    const card_limit = searchParams.get('card_limit') || CARDLIMIT;
-    const [cards, setCards] = useState<CardProps[]>([]);
+  const { search } = useLocation();
+  const searchParams = new URLSearchParams(search);
+  const card_limit = parseInt(searchParams.get('card_limit') || String(CARDLIMIT));
+
+  const [artists, setArtists] = useState<Artist[]>([]);
 
   useEffect(() => {
-    fetch(`https://jsonplaceholder.typicode.com/posts?_limit=${card_limit}`)
-      .then((response) => response.json())
+    import('../../CardList/Cardlist.json') 
       .then((data) => {
-    console.log(data);
-      setCards(data);
-      }
-       
-    )}, []);
+        const allArtists: Artist[] = data.default || data;
+
+        const shuffled = [...allArtists]
+          .sort(() => 0.5 - Math.random())
+          .slice(0, card_limit);
+
+        setArtists(shuffled);
+      })
+      .catch((err) => {
+        console.error('Ошибка загрузки JSON:', err);
+      });
+  }, [card_limit]);
 
   return (
     <div className="cards__page__container">
-      <Header/>
       <div className="edit__cards">
-        {cards.map(card => (
-          <Card
-            id={card.id}
-            title={card.title}
-            body={card.body}
-          />
-        ))}
+        {artists.length > 0 ? (
+          artists.map((artist) => (
+            <Card
+              key={artist.id}
+              id={artist.id}
+              name={artist.name}
+              instrument={artist.instrument}
+              description={artist.description}
+              avatar={artist.avatar}
+            />
+          ))
+        ) : (
+          <p>Загрузка...</p>
+        )}
       </div>
     </div>
-  )
+  );
 }

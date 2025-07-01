@@ -14,8 +14,6 @@ export const Header = ({openForm}: HeaderProps): React.ReactElement => {
             </div>
             <nav className="header__nav">
                 <ul>
-                    <li><NavLink to ="/">Студия</NavLink></li>
-                    <li><NavLink to ="/">Сообщество</NavLink></li>
                     <li><NavLink to ="/">Звуки</NavLink></li>
                     <li><NavLink to ="/">МузСвитч</NavLink></li>
                     <li><NavLink to ="/">Каталог</NavLink></li>

@@ -1,15 +1,15 @@
 import React from 'react';
 
-export const Plugins = (): React.ReactElement => {
+export const Catalog = (): React.ReactElement => {
     return (
 
-<section className="section plugins">
-        <div className="plugins__content">
-            <h4 className="plugins__subtitle">Каталог</h4>
-            <h2 className="plugins__title">Выбери свой<br/><span className="plugins__span">инструмент </span></h2>
-            <p className="plugins__description">Каждый инструмент — это новый язык. Какой будет твой?
+<section className="section catalog">
+        <div className="catalog__content">
+            <h4 className="catalog__subtitle">Каталог</h4>
+            <h2 className="catalog__title">Выбери свой<br/><span className="catalog__span">инструмент </span></h2>
+            <p className="catalog__description">Каждый инструмент — это новый язык. Какой будет твой?
  Гитара, фортепиано или барабаны — найди то, что заставит твоё сердце биться в ритме!</p>
-            <button className="plugins__button" type="button">Выбирайте </button>
+            <button className="catalog__button" type="button">Выбирайте </button>
         </div>
         <div className="logo-circle-container">
             <div className="circle">

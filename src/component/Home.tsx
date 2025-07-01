@@ -3,8 +3,8 @@ import React from "react"
 import { Promo } from "./Promo/Promo"
 import {Company} from "./Company/Company"
 import { Sound } from "./Sound/Sound"
-import { Plugins } from "./Сatalog/Сatalog"
-import { Studio } from "./MusSwitch/MusSwitch"
+import { Catalog } from "./Сatalog/Сatalog"
+import { MusSwitch } from "./MusSwitch/MusSwitch"
 import { Creator } from "./Creator/Creator"
 import { Features } from "./Features/Features"
 import { Jobs } from "./Jobs/Jobs"
@@ -15,8 +15,8 @@ export const Home = (): React.ReactElement => {
         <Promo/>
         <Company/>
         <Sound/>
-        <Plugins/>
-        <Studio/>
+        <Catalog/>
+        <MusSwitch/>
         <Creator/>
         <Features/>
         <Jobs/>

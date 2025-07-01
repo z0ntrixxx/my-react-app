@@ -17,8 +17,6 @@ export const CardList = (): React.ReactElement => {
     import('../CardList/Cardlist.json')
       .then((data) => {
         const artistsArray: Artist[] = data.default || data;
-
-        // Функция для выбора N случайных уникальных элементов
         const getRandomArtists = (arr: Artist[], n: number): Artist[] => {
           const shuffled = [...arr];
           for (let i = shuffled.length - 1; i > 0; i--) {
@@ -30,7 +28,7 @@ export const CardList = (): React.ReactElement => {
 
         const randomFour = getRandomArtists(artistsArray, 4);
         setRandomArtists(randomFour);
-        setArtists(artistsArray); // если нужно хранить и полный список тоже
+        setArtists(artistsArray);
       })
       .catch((err) => {
         console.error('Ошибка загрузки JSON:', err);

@@ -10,9 +10,9 @@ export const Creator = (): React.ReactElement => {
                     <h2 className="creator__title">Музыкальные инструменты —<br/>
                     <span className="creator__span">свидетели эпох</span> хранители мелодий веков</h2>
                     <p className="creator__description">
-                        Клиент очень важен, за клиентом пойдет клиент.<br />
-                        Augue tellus urna, mi velit diam.<br />
-                        Turpis diam amet massa id.
+                        Каждый инструмент — мост между прошлым и будущим.<br/>
+В его звучании — отзвук веков, в его форме — отражение культуры.<br/>
+Он не просто создает музыку — он хранит её душу.
                     </p>
                     <button className="creator__button" type="button">Попробуйте прямо сейчас</button>
                 </div>
