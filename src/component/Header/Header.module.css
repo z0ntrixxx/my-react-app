@@ -14,7 +14,7 @@
 }
 
 .header__logo img {
-    height: 30px;
+    height: 70px;
 }
 
 .header__nav ul {
@@ -38,19 +38,13 @@
     z-index: 3;
 }
 
-.btn-login {
+
+
+.btn-signup {
     padding: 8px 20px;
     border: 1px solid #ddd;
     border-radius: 20px;
     background: none;
-    cursor: pointer;
-}
-
-.btn-signup {
-    padding: 8px 20px;
-    border: none;
-    border-radius: 20px;
-    background: #FFFFFF42;
     cursor: pointer;
 }
 

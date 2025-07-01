@@ -20,7 +20,7 @@
 }
 
 .creator__span {
-    color: #0033FF;
+    color: greenyellow;
 }
 
 .creator__description {
@@ -31,7 +31,7 @@
 }
 
 .creator__button {
-    background-color: #0033FF;
+    background-color: green;
     color: white;
     border: none;
     border-radius: 30px;
@@ -54,4 +54,10 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+}
+
+@media (max-width: 1366px) {
+    .creator__title{
+        font-size: 38px;
+    }
 }

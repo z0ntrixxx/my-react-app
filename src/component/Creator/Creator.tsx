@@ -7,7 +7,8 @@ export const Creator = (): React.ReactElement => {
             <div className="creator__content">
 
                 <div className="creator__left">
-                    <h2 className="creator__title">Что говорят <span className="creator__span">создатели</span> о Splice</h2>
+                    <h2 className="creator__title">Музыкальные инструменты —<br/>
+                    <span className="creator__span">свидетели эпох</span> хранители мелодий веков</h2>
                     <p className="creator__description">
                         Клиент очень важен, за клиентом пойдет клиент.<br />
                         Augue tellus urna, mi velit diam.<br />

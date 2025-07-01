@@ -1,31 +1,58 @@
-import React, {useState, useEffect} from 'react'
+import React, { useState, useEffect } from 'react';
 import { Card } from '../Card/Card';
 
-interface CardProps {
-    id: number;
-    title: string;
-    body: string;
+interface Artist {
+  id: number;
+  name: string;
+  instrument: string;
+  description: string;
+  avatar: string;
 }
 
 export const CardList = (): React.ReactElement => {
-const [cards, setCards] = useState<CardProps[]>([]);
+  const [artists, setArtists] = useState<Artist[]>([]);
+  const [randomArtists, setRandomArtists] = useState<Artist[]>([]);
 
-useEffect(() => {
-  fetch('https://jsonplaceholder.typicode.com/posts?_limit=4')
-    .then(response => response.json())
-    .then(data => setCards(data));
-}, []);
+  useEffect(() => {
+    import('../CardList/Cardlist.json')
+      .then((data) => {
+        const artistsArray: Artist[] = data.default || data;
 
- return (
+        // Функция для выбора N случайных уникальных элементов
+        const getRandomArtists = (arr: Artist[], n: number): Artist[] => {
+          const shuffled = [...arr];
+          for (let i = shuffled.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+          }
+          return shuffled.slice(0, n);
+        };
+
+        const randomFour = getRandomArtists(artistsArray, 4);
+        setRandomArtists(randomFour);
+        setArtists(artistsArray); // если нужно хранить и полный список тоже
+      })
+      .catch((err) => {
+        console.error('Ошибка загрузки JSON:', err);
+      });
+  }, []);
+
+  return (
     <div className="creator__list">
-      {cards.map(card => (
-        <Card
-          id={card.id}
-          title={card.title}
-          body={card.body}
-        />
-      ))}
+      {randomArtists.length > 0 ? (
+        randomArtists.map((artist) => (
+          <Card
+            key={artist.id}
+            id={artist.id}
+            name={artist.name}
+            instrument={artist.instrument}
+            description={artist.description}
+            avatar={artist.avatar}
+          />
+        ))
+      ) : (
+        <p>Загрузка...</p>
+      )}
     </div>
   );
-}
-
+};

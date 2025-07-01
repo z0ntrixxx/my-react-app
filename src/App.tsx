@@ -11,6 +11,7 @@ export const App = () => {
       <Routes>
         <Route element={<Layout />}>
           <Route index element={<Home />} />
+          
         </Route>
         <Route path="/forcards" element={<CardsPage />} />
 

@@ -32,7 +32,7 @@
 }
 
 .plugins__span {
-    color: #0033FF;
+    color: greenyellow;
 }
 
 .plugins__description {
@@ -44,7 +44,7 @@
 }
 
 .plugins__button {
-    background-color: #0033FF;
+    background-color: green;
     color: white;
     border: none;
     border-radius: 30px;
