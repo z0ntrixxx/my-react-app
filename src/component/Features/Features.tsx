@@ -9,23 +9,23 @@ export const Features = (): React.ReactElement => {
     <div className="features__grid">
       <div className="feature">
         <img src="img/Volume_Up.png" alt="Heart icon" className="feature__icon"/>
-        <h3 className="feature__subtitle">100% свободных от авторских прав</h3>
-        <p className="feature__description">Используйте звуки для чего угодно. Они разрешены для коммерческого использования.</p>
+        <h3 className="feature__subtitle">100% свободы</h3>
+        <p className="feature__description">Выбираете что угодно. Выбор всегда остается за Вами.</p>
       </div>
       <div className="feature">
         <img src="img/Unlock.png" alt="Lock icon" className="feature__icon"/>
-        <h3 className="feature__subtitle">Без обязательств</h3>
-        <p className="feature__description">Отмените подписку в любое время, без вопросов.</p>
+        <h3 className="feature__subtitle">Мы подскажем</h3>
+        <p className="feature__description">Обратитесь к нам в любое время.</p>
       </div>
       <div className="feature">
         <img src="img/Download.png" alt="Download icon" className="feature__icon"/>
         <h3 className="feature__subtitle">Ваше навсегда</h3>
-        <p className="feature__description">Сохраняйте всё, что скачали. Даже если отмените подписку.</p>
+        <p className="feature__description">Бессрочная гарантия на всё</p>
       </div>
       <div className="feature">
         <img src="img/Play.png" alt="Play icon" className="feature__icon"/>
-        <h3 className="feature__subtitle">Индивидуальные образцы</h3>
-        <p className="feature__description">Просмотр и загрузка отдельных образцов, а не только полных пакетов.</p>
+        <h3 className="feature__subtitle">Индивидуальность</h3>
+        <p className="feature__description">Обращайтесь к Нам за уникальными инструментами</p>
       </div>
     </div>
   </div>

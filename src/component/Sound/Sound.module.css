@@ -22,7 +22,7 @@
 }
 
 .sounds__title-span {
-    color: #0033FF; 
+    color: greenyellow; 
 }
 
 .sounds__description {
@@ -34,7 +34,7 @@
 }
 
 .sounds__button {
-    background-color: #0033FF;
+    background-color: green;
     color: white;
     border: none;
     border-radius: 30px;
@@ -47,7 +47,7 @@
 }
 
 .sounds__button:hover {
-    background-color: #0022CC;
+    background-color: green;
 }
 
 .sounds__image {
@@ -56,6 +56,7 @@
     border-radius: 8px;
     position: relative;
     z-index: 1;
+    border-radius: 10%;
 }
 
 .vector__image {
