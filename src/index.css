@@ -8,3 +8,10 @@
 @import url(./component/Features/Features.module.css);
 @import url(./component/Jobs/Jobs.module.css);
 @import url(./component/Footer/Footer.module.css);
+@import url(./component/Card/Card.module.css);
+@import 'swiper/css';
+@import 'swiper/css/navigation';
+@import url(./component/Slider/Swiper.module.css);
+@import url(./component/Preloader/Preloader.module.css);
+@import url(./component/container.module.css);
+@import url(./component/Form/Form.module.css);
