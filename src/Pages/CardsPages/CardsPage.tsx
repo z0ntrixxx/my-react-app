@@ -1,7 +1,8 @@
 import { useLocation } from "react-router"
 import { useEffect, useState } from 'react'
-import { Header } from "../../Header/Header"
-import { Card } from "../../Card/Card"
+import { Header } from "../../component/Header/Header"
+import { Card } from "../../component/Card/Card"
+import { Form } from "../../component/Form/Form"
 
 interface CardProps {
     "id": number;
@@ -16,6 +17,7 @@ export function CardsPage() {
     const searchParams = new URLSearchParams(search);
     const card_limit = searchParams.get('card_limit') || CARDLIMIT;
     const [cards, setCards] = useState<CardProps[]>([]);
+    const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
     fetch(`https://jsonplaceholder.typicode.com/posts?_limit=${card_limit}`)
@@ -29,7 +31,7 @@ export function CardsPage() {
 
   return (
     <div className="cards__page__container">
-      <Header/>
+      <Header openForm={() => setIsOpen(true)} />
       <div className="edit__cards">
         {cards.map(card => (
           <Card
@@ -38,6 +40,7 @@ export function CardsPage() {
             body={card.body}
           />
         ))}
+        <Form isOpen={isOpen} onClose={() => setIsOpen(false)}/>
       </div>
     </div>
   )

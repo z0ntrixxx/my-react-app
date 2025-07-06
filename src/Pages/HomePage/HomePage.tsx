@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react'
-import { Card } from '../../Card/Card';
+import {Card} from "../../component/Card/Card"
 
 interface CardProps {
     id: number;

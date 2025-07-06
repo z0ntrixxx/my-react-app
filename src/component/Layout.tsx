@@ -10,7 +10,7 @@ export const Layout = () => {
 
     return( 
         <div className="container">
-            <Preloader/>
+        <Preloader/>
         <Header openForm={() => setIsOpen(true)} />
         <main><Outlet/></main>
         <Footer/>
