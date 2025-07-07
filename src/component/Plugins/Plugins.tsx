@@ -3,7 +3,7 @@ import React from 'react';
 export const Plugins = (): React.ReactElement => {
     return (
 
-<section className="section plugins">
+<section id="plugins" className="section plugins">
         <div className="plugins__content">
             <h4 className="plugins__subtitle">Плагины</h4>
             <h2 className="plugins__title">Создайте свою<br/><span className="plugins__span">цифровую студию</span></h2>

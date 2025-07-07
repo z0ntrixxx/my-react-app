@@ -2,7 +2,7 @@ import react from 'react';
 
 export const Studio = (): React.ReactElement =>{
     return (
-        <section className="container studio" id='studio'>
+        <section id="studio" className="container studio">
 
         <img className="studio__image" src="img/browse.png" alt="Показ функционала внутри"/>
 

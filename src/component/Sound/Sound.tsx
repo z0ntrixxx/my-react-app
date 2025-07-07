@@ -1,8 +1,8 @@
-import { React } from 'react';
+import React from 'react';
 
 export const Sound = (): React.ReactElement => {
     return (
-        <section className="container sound">
+        <section id="sound" className="container sound">
             <div className="sounds__content">
                 <h4 className="sounds__subtitle">Звуки</h4>
                 <h2 className="sounds__title">Найди свой<span className="sounds__title-span"> звук</span></h2>
