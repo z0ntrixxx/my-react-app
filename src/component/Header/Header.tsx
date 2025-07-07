@@ -14,12 +14,12 @@ export const Header = ({openForm}: HeaderProps): React.ReactElement => {
             </div>
             <nav className="header__nav">
                 <ul>
-                    <li><NavLink to ="#studio">Студия</NavLink></li>
-                    <li><NavLink to ="/">Сообщество</NavLink></li>
                     <li><NavLink to ="/">Звуки</NavLink></li>
                     <li><NavLink to ="/">Плагины</NavLink></li>
-                    <li><NavLink to ="/">Блог</NavLink></li>
+                    <li><NavLink to ="#studio">Студия</NavLink></li>
                     <li><NavLink to ="/forcards">Карточки</NavLink></li>
+                    <li><NavLink to ="/">Сообщество</NavLink></li>
+                    <li><NavLink to ="/">Блог</NavLink></li>
                 </ul>
             </nav>
             <div className="header__buttons">
