@@ -32,7 +32,7 @@
 }
 
 .catalog__span {
-    color: greenyellow;
+    color: rgb(14, 83, 14);
 }
 
 .catalog__description {
@@ -44,7 +44,7 @@
 }
 
 .catalog__button {
-    background-color: green;
+    background-color: rgb(14, 83, 14);
     color: white;
     border: none;
     border-radius: 30px;
@@ -85,33 +85,27 @@
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
-
     border-radius: 50%;
-
     background: #F4F6F9;
-
 }
 
 .circle::after {
     position: absolute;
     content: "";
-
     width: 340px;
     height: 340px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-
     border: 3px;
     border-radius: 50%;
-
     background: radial-gradient(50% 50% at 50% 50%, #816FFF 0%, rgba(129, 64, 155, 0) 100%);
 }
 
 .logo {
-    height: 64px;
+    height: 80px;
     position: absolute;
-    width: 64px;
+    width: 80px;
     height: auto;
     opacity: 0.8;
     transition: opacity 0.3s ease;
@@ -130,7 +124,7 @@
 
 .logo_vints {
     top: 30%;
-    left: 151%;
+    left: 154%;
     transform: translateX(-50%);
 }
 
@@ -154,7 +148,7 @@
 
 .logo_rc-20 {
     top: 30%;
-    left: 12%;
+    left: 10%;
     transform: translateX(-50%);
 }
 
@@ -176,44 +170,52 @@
     transform: translate(-50%, -50%);
 }
 
-@media (max-width: 1366px) {}
-
 @media (max-width: 1316px) {
-    .catalog{
+    .catalog {
         flex-direction: column;
     }
-    .catalog__content{
+
+    .catalog__content {
         text-align: center;
     }
-    .circle{
-        transform: translateX( -17%)
-    }
-    .logo_lips{
-        transform: translateX( -175%)
-    }
-    .logo_vints{
-        transform: translateX( -178%)
-    }
-    .logo_waves{
-        transform: translateX( -178%)
-    }
-    .logo_vinil{
-        transform: translate( -178%, -99%)
-    }
-    .logo_izotope{
-        transform: translateX( -178%)
-    }
-    .logo_rc-20{
-        transform: translateX( -178%)
-    }
-    .logo_serum{
-        transform: translate( -178%,-50%)
-    }
-    .logo_orange{
-        transform: translate( -178%,-50%)
-    }
-    .logo_A{
-        transform: translate( -178%,-50%)
+
+    .circle {
+        transform: translateX(-17%)
     }
 
+    .logo_lips {
+        transform: translateX(-175%)
+    }
+
+    .logo_vints {
+        transform: translateX(-178%)
+    }
+
+    .logo_waves {
+        transform: translateX(-178%)
+    }
+
+    .logo_vinil {
+        transform: translate(-178%, -99%)
+    }
+
+    .logo_izotope {
+        transform: translateX(-178%)
+    }
+
+    .logo_rc-20 {
+        transform: translateX(-178%)
+    }
+
+    .logo_serum {
+        transform: translate(-178%, -50%)
+    }
+
+    .logo_orange {
+        transform: translate(-178%, -50%)
+    }
+
+    .logo_A {
+        transform: translate(-178%, -50%)
+    }
 }

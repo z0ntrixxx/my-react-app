@@ -1,0 +1,19 @@
+.Not__found-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Not__found__button {
+    padding: 8px 20px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    background: none;
+    cursor: pointer;
+}
+
+.Not__found__button__link {
+    text-decoration: none;
+    color: black;
+}

@@ -5,12 +5,11 @@ export const Preloader = () => {
         setTimeout(() => {
             setLoading(true);
         }, 2000);
-    },[]);
+    }, []);
 
-
-return !loading && (
-    <div className="preloader">
-        <div className="loader"></div>
-    </div>
-)
+    return !loading && (
+        <div className="preloader">
+            <div className="loader"></div>
+        </div>
+    )
 }

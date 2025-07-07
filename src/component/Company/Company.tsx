@@ -6,10 +6,8 @@ export const Company = (): React.ReactElement => {
         <section className="section commpany">
             <h4 className="company__subtitle">Основано в</h4>
             <div className="company__image">
-               <Slider/>
+                <Slider />
             </div>
-
         </section >
-
     )
 }

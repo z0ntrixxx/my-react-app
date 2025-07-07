@@ -10,7 +10,6 @@
     display: flex;
 }
 
-
 .creator__title {
     color: white;
     font-size: 40px;
@@ -20,7 +19,7 @@
 }
 
 .creator__span {
-    color: greenyellow;
+    color: rgb(29, 167, 29);
 }
 
 .creator__description {
@@ -31,7 +30,7 @@
 }
 
 .creator__button {
-    background-color: green;
+    background-color: rgb(14, 83, 14);
     color: white;
     border: none;
     border-radius: 30px;
@@ -56,12 +55,12 @@
     align-items: flex-start;
 }
 
-.creator__left{
-    margin-left: 10px;
+.creator__left {
+    margin-left: 30px;
 }
 
 @media (max-width: 1366px) {
-    .creator__title{
+    .creator__title {
         font-size: 32px;
     }
 }

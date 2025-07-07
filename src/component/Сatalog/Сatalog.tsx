@@ -3,7 +3,7 @@ import React from 'react';
 export const Catalog = (): React.ReactElement => {
     return (
 
-<section className="section catalog">
+<section id="catalog" className="section catalog">
         <div className="catalog__content">
             <h4 className="catalog__subtitle">Каталог</h4>
             <h2 className="catalog__title">Выбери свой<br/><span className="catalog__span">инструмент </span></h2>
@@ -13,7 +13,6 @@ export const Catalog = (): React.ReactElement => {
         </div>
         <div className="logo-circle-container">
             <div className="circle">
-
             </div>
             <img src="img/violin.png" className="logo logo_lips" alt="Лого 1"/>
             <img src="img/guitar.png" className="logo logo_vints" alt="Лого 2"/>
@@ -26,6 +25,5 @@ export const Catalog = (): React.ReactElement => {
             <img src="img/ukulele.png" className="logo logo_A" alt="Лого 9"/>
         </div>
     </section>
-
     )
 }

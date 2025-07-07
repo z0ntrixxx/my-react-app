@@ -6,15 +6,15 @@ import { Form } from "./Form/Form";
 import { useState } from "react";
 
 export const Layout = () => {
-    const [isOpen, setIsOpen]=useState(false)
+    const [isOpen, setIsOpen] = useState(false)
 
-    return( 
+    return (
         <div className="container">
-            <Preloader/>
-        <Header openForm={() => setIsOpen(true)} />
-        <main><Outlet/></main>
-        <Footer/>
-        <Form isOpen={isOpen} onClose={() => setIsOpen(false)}/>
+            <Preloader />
+            <Header openForm={() => setIsOpen(true)} />
+            <main><Outlet /></main>
+            <Footer />
+            <Form isOpen={isOpen} onClose={() => setIsOpen(false)} />
         </div>
     )
 }

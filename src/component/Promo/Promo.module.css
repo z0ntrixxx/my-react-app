@@ -10,6 +10,12 @@
     position: relative;
     z-index: 2;
     text-align: left;
+    margin-left: 50px;
+}
+
+.sound__title-span {
+    color: rgb(14, 83, 14);
+    ;
 }
 
 .promo h2 {
@@ -17,7 +23,7 @@
     font-weight: 700;
     line-height: 1.1;
     margin-bottom: 20px;
-    color: #000; 
+    color: #000;
 }
 
 .promo p {
@@ -30,7 +36,7 @@
 
 .btn-promo {
     padding: 15px 30px;
-    background: green;
+    background: rgb(14, 83, 14);
     color: white;
     border: none;
     border-radius: 30px;
@@ -39,34 +45,34 @@
     cursor: pointer;
 }
 
-.promo__people{
+.promo__people {
     border-radius: 10% 0 0 10%;
 }
 
 @media (max-width: 1366px) {
-    .promo__people{
+    .promo__people {
         width: 664px;
         height: 578px;
     }
 
-    .promo h2{
+    .promo h2 {
         font-size: 50px;
     }
 }
 
 @media (max-width: 1024px) {
-    .promo__people{
+    .promo__people {
         width: 472px;
         height: 386px;
     }
 
-    .promo h2{
+    .promo h2 {
         font-size: 40px;
     }
 }
 
 @media (max-width: 800px) {
-    .promo__people{
+    .promo__people {
         width: 470px;
         height: 384px;
     }

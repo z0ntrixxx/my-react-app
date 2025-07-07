@@ -1,6 +1,6 @@
 .commpany {
     font-family: 'Inter', sans-serif;
-    text-align: center; 
+    text-align: center;
     margin: 40px 0;
     position: relative;
 }
@@ -16,17 +16,17 @@
 
 .company__image {
     display: flex;
-    justify-content: center; 
+    justify-content: center;
     align-items: center;
-    gap: 40px; 
+    gap: 40px;
     flex-wrap: wrap;
     padding: 20px 0;
 }
 
 .company__img {
-    height: 70px; 
+    height: 70px;
     width: auto;
     opacity: 0.7;
-    filter: grayscale(30%); 
+    filter: grayscale(30%);
     transition: all 0.3s ease;
 }

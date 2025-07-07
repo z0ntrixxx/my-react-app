@@ -1,6 +1,8 @@
 import { useLocation } from 'react-router';
 import { useEffect, useState } from 'react';
-import { Card } from '../../Card/Card';
+import { Card } from '../../component/Card/Card';
+import { Form } from '../../component/Form/Form';
+import { Header } from '../../component/Header/Header';
 
 interface Artist {
   id: number;
@@ -10,9 +12,10 @@ interface Artist {
   avatar: string;
 }
 
-const CARDLIMIT = 4;
+const CARDLIMIT = 10;
 
 export function CardsPage() {
+  const [isOpen, setIsOpen] = useState(false)
   const { search } = useLocation();
   const searchParams = new URLSearchParams(search);
   const card_limit = parseInt(searchParams.get('card_limit') || String(CARDLIMIT));
@@ -20,7 +23,7 @@ export function CardsPage() {
   const [artists, setArtists] = useState<Artist[]>([]);
 
   useEffect(() => {
-    import('../../CardList/Cardlist.json') 
+    import('../../component/CardList/Cardlist.json')
       .then((data) => {
         const allArtists: Artist[] = data.default || data;
 
@@ -37,6 +40,8 @@ export function CardsPage() {
 
   return (
     <div className="cards__page__container">
+      <Header openForm={() => setIsOpen(true)} />
+
       <div className="edit__cards">
         {artists.length > 0 ? (
           artists.map((artist) => (
@@ -53,6 +58,8 @@ export function CardsPage() {
           <p>Загрузка...</p>
         )}
       </div>
+      <Form isOpen={isOpen} onClose={() => setIsOpen(false)} />
+
     </div>
   );
 }

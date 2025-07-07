@@ -37,20 +37,16 @@ export const CardList = (): React.ReactElement => {
 
   return (
     <div className="creator__list">
-      {randomArtists.length > 0 ? (
-        randomArtists.map((artist) => (
-          <Card
-            key={artist.id}
-            id={artist.id}
-            name={artist.name}
-            instrument={artist.instrument}
-            description={artist.description}
-            avatar={artist.avatar}
-          />
-        ))
-      ) : (
-        <p>Загрузка...</p>
-      )}
+      {randomArtists.map((artist) => (
+        <Card
+          key={artist.id}
+          id={artist.id}
+          name={artist.name}
+          instrument={artist.instrument}
+          description={artist.description}
+          avatar={artist.avatar}
+        />
+      ))}
     </div>
   );
 };

@@ -31,7 +31,7 @@
 }
 
 .musSwitch__span {
-    color: greenyellow; 
+    color: rgb(14, 83, 14);
 }
 
 .musSwitch__description {
@@ -42,7 +42,7 @@
 }
 
 .musSwitch__button {
-    background-color: green;
+    background-color: rgb(14, 83, 14);
     color: white;
     border: none;
     border-radius: 30px;
@@ -70,17 +70,18 @@
 }
 
 @media (max-width: 1024px) {
-    .musSwitch__image{
+    .musSwitch__image {
         width: 480px;
         height: 430px;
     }
-    .musSwitch__title{
+
+    .musSwitch__title {
         margin-top: 15px;
     }
 }
 
 @media (max-width: 800px) {
-    .musSwitch__content{
+    .musSwitch__content {
         margin-left: 5px;
     }
 }

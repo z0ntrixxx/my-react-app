@@ -2,7 +2,7 @@
     font-family: 'Inter', sans-serif;
     padding: 100px 0;
     position: relative;
-    background: linear-gradient( 95.31deg, #FFD700 -28.73%, #ADFF2F 20%, #008000 90%, #013220 111.77% );
+    background: linear-gradient(95.31deg, #FFD700 -28.73%, #ADFF2F 20%, #008000 90%, #013220 111.77%);
     color: white;
     text-align: center;
 }
@@ -18,7 +18,7 @@
 }
 
 .jobs__button {
-    background-color: transparent;
+    background-color: #008000;
     border-color: white;
     color: white;
     border-radius: 30px;
@@ -29,7 +29,6 @@
     transition: all 0.3s ease;
     display: inline-block;
 }
-
 
 .jobs__button:hover {
     transform: translateY(-2px);
