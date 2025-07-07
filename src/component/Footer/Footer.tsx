@@ -34,7 +34,7 @@ export const Footer = (): React.ReactElement =>{
                 </ul>
             </div>
 
-            <div className="footer__nav-block">
+            <div id="community" className="footer__nav-block">
                 <h2 className="footer__nav__title">Сообщество</h2>
                 <ul className="footer__nav__list">
 
@@ -69,7 +69,7 @@ export const Footer = (): React.ReactElement =>{
                 </ul>
             </div>
 
-            <div className="footer__nav-block">
+            <div id="blog" className="footer__nav-block">
                 <h2 className="footer__nav__title">Блог</h2>
                 <ul className="footer__nav__list">
                     <li className="footer__nav-list-item"><a href="#">Последние сообщения</a></li>
