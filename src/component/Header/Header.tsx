@@ -1,25 +1,32 @@
-import { React } from 'react';
+import React from 'react';
+import { NavLink } from 'react-router-dom';
 
-export const Header = (): React.ReactElement => {
+interface HeaderProps {
+    openForm: () => void;
+}
+
+export const Header = ({openForm}: HeaderProps): React.ReactElement => {
     return (
         <header className="container header">
         <div className="header__container">
             <div className="header__logo">
-                <img src="img/Logo.png" alt="Splice"/>
+                <NavLink to ="/"><img src="img/Logo.png" alt="Splice"/></NavLink>
             </div>
             <nav className="header__nav">
                 <ul>
-                    <li><a href="#">Студия</a></li>
-                    <li><a href="#">Сообщество</a></li>
-                    <li><a href="#">Звуки</a></li>
-                    <li><a href="#">Плагины</a></li>
-                    <li><a href="#">Блог</a></li>
+                    <li><NavLink to ="/">Звуки</NavLink></li>
+                    <li><NavLink to ="/">Плагины</NavLink></li>
+                    <li><NavLink to ="#studio">Студия</NavLink></li>
+                    <li><NavLink to ="/forcards">Карточки</NavLink></li>
+                    <li><NavLink to ="/">Сообщество</NavLink></li>
+                    <li><NavLink to ="/">Блог</NavLink></li>
                 </ul>
             </nav>
             <div className="header__buttons">
                 <button className="btn-login">Войти</button>
-                <button className="btn-signup">Зарегистрироваться</button>
+                <button className="btn-signup" onClick={openForm}>Зарегистрироваться</button>
             </div>
+            
         </div>
     </header>
 
