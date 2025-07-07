@@ -175,3 +175,45 @@
     left: 54%;
     transform: translate(-50%, -50%);
 }
+
+@media (max-width: 1366px) {}
+
+@media (max-width: 1316px) {
+    .plugins{
+        flex-direction: column;
+    }
+    .plugins__content{
+        text-align: center;
+    }
+    .circle{
+        transform: translateX( -17%)
+    }
+    .logo_lips{
+        transform: translateX( -175%)
+    }
+    .logo_vints{
+        transform: translateX( -178%)
+    }
+    .logo_waves{
+        transform: translateX( -178%)
+    }
+    .logo_vinil{
+        transform: translate( -178%, -99%)
+    }
+    .logo_izotope{
+        transform: translateX( -178%)
+    }
+    .logo_rc-20{
+        transform: translateX( -178%)
+    }
+    .logo_serum{
+        transform: translate( -178%,-50%)
+    }
+    .logo_orange{
+        transform: translate( -178%,-50%)
+    }
+    .logo_A{
+        transform: translate( -178%,-50%)
+    }
+
+}
