@@ -48,8 +48,6 @@
     cursor: pointer;
 }
 
-@media (max-width:1366) {}
-
 @media (max-width: 1024px) {
     .header__nav ul {
         gap: 15px;
@@ -73,8 +71,3 @@
         padding: 8px 8px;
     }
 }
-
-@media (max-width: 800px) {
-
-}
-/* 1366 768  1024 768   800 480 */

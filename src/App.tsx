@@ -1,13 +1,10 @@
 import { Layout } from './component/Layout';
 import { Home } from './component/Home';
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { NotFoundPage } from './Pages/NotFoundPage/NotFoundPage';
-import { CardsPage } from './Pages/CardsPages/CardsPage'
-import { Header } from './component/Header/Header';
-import { useState } from 'react';
+import { CardsPage } from './Pages/CardsPages/CardsPage';
 
 export const App = () => {
-  const [isOpen, setIsOpen] = useState(false)
   return (
     <BrowserRouter>
       <Routes>
